@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.row {
+  width: 100%;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  position: relative;
+  padding: 10px;
+}
+p {
+  background-color: grey;
+  border: 2px solid black;
+  height: 175px;
+  padding: 40px 40px 40px 40px;
+  margin: 10px;
+  overflow: hidden;
+  font-size: 16px;
+}
+div.pizza,
+div.burger,
+div.sandwich {
+  border: 2px solid black;
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+}
+div.pizza {
+  background-color: #ffa500;
+}
+div.burger {
+  background-color: #ff6347;
+  color: white;
+}
+div.sandwich {
+  background-color: #ffff00;
+}
+/**
+ * Large Device Only
+ */
+@media (min-width: 992px) {
+  .large {
+    width: 33.33%;
+    float: left;
+  }
+}
+/**
+ * Medium Device Only
+ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .medium {
+    width: 50%;
+    float: left;
+  }
+  /**
+   * For Third Section To Take Full Width
+   */
+  .fix_on_medium_device {
+    width: 100%;
+  }
+}
+/**
+ * Small Device Only
+ */
+@media (max-width: 767px) {
+  .small {
+    width: 100%;
+    float: left;
+  }
+  /**
+   * Not Required!
+   */
+  .fix_on_medium_device {
+    margin-bottom: 16px;
+  }
+}
