@@ -12,11 +12,11 @@
     "Jim",
   ];
   for (var i = 0; i < names.length; i++) {
-    var check = names[i].charAt(0);
-    if (check === "J" || check === "j") {
-      console.log("Good Bye " + names[i]);
+    var jLetter = names[i].charAt(0);
+    if (jLetter === "j" || jLetter === "J") {
+      byeSpeaker.speak(names[i]);
     } else {
-      console.log("Hello " + names[i]);
+      helloSpeaker.speak(names[i]);
     }
   }
 })();
